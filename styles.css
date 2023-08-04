@@ -1,0 +1,382 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.link-estilo {
+  text-decoration: none;
+}
+
+.interlineado {
+  line-height: 25px;
+}
+
+.interletrado {
+  letter-spacing: 7px;
+}
+
+/* Menu */
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: end;
+  position: fixed; /* Agregar la posición fixed */
+  z-index: 999; /* Asegurarse de que el menú esté por encima del contenido */
+  width: 100%;
+  transition: background-color 0.3s ease; /* Agregar una transición de color de fondo */
+}
+
+.menu.scrolled {
+  background-color: #ffffff; /* Cambiar el color de fondo del menú cuando se hace scroll */
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.menu li a {
+  display: block;
+  padding: 15px 10px;
+  text-decoration: none;
+  color: #003049;
+  font-weight: 400;
+}
+
+.opcion:hover {
+  background-color: #003049;
+}
+
+.opcion a:hover {
+  color: #fdf3da;
+}
+
+.img-principal {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./img/portada.png");
+  background-attachment: fixed;
+}
+
+.titulo1 {
+  position: absolute;
+  top: 45%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  text-align: center;
+  color: #003049;
+  letter-spacing: 7px;
+  border-top: 1px solid #003049;
+}
+
+.texto1 {
+  position: absolute;
+  top: 38%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 400;
+  text-align: center;
+  color: #003049;
+  letter-spacing: 5px;
+}
+
+.boton {
+  position: absolute;
+  top: 55%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 5px;
+  background-color: #003049;
+  color: #fdf3da;
+  border: #fdf3da 5px double;
+
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #ffffff;
+  color: #003049;
+  border: #003049 5px double;
+}
+
+/*
+.separador {
+  width: 0;
+  height: 0;
+  border-right: 100vw solid transparent;
+  border-bottom: 5.9vw solid white;
+  margin-top: -5.9vw;
+}
+*/
+
+/* Contenedor 2 - A cerca de nostros */
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  align-items: center;
+}
+
+.img-2 {
+  width: 45%;
+  text-align: end;
+  padding: 1%;
+}
+
+.img-2 img {
+  width: 70%;
+  border-radius: 15px;
+  box-shadow: #003049 0px 1px 4px, #003049 0px 0px 0px 5px;
+  transition: transform 0.3s ease;
+}
+
+.img-2 img:hover {
+  transform: scale(1.07);
+}
+
+.contenedor-text {
+  width: 45%;
+  padding: 1%;
+}
+
+.titulo-texto2 {
+  font-family: "Sacramento", cursive;
+  font-size: 30px;
+  letter-spacing: 5px;
+  color: #669bbc;
+}
+
+.titulo2 {
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: #003049;
+}
+
+.texto-2 {
+  width: 70%;
+  line-height: 25px;
+}
+
+.boton2 {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 5px;
+  background-color: #003049;
+  color: #fdf3da;
+  border: #fdf3da 5px double;
+
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.boton2:hover {
+  background-color: #ffffff;
+  color: #003049;
+  border: #003049 5px double;
+}
+
+/* Contenedor 3 - Productos */
+
+.contenedor_s3 {
+  display: flex;
+  justify-content: center;
+  padding: 100px;
+  align-items: center;
+  background-color: #e3f2fd;
+}
+
+.contenedor_s3-1 {
+  width: 25%;
+}
+
+.titulo-texto3 {
+  font-family: "Sacramento", cursive;
+  font-size: 30px;
+  letter-spacing: 5px;
+  color: #156198;
+}
+
+.texto-3 {
+  width: 90%;
+}
+
+.contenedor_s3-2 {
+  width: 20%;
+  padding-right: 1%;
+  padding-left: 1%;
+}
+
+.contenedor_s3-2-img {
+  width: 75%;
+}
+
+.img-card-1 {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.img-card-1:hover {
+  transform: scale(1.25);
+}
+
+.contenedor_s3-2-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 800;
+  color: #003049;
+  font-size: large;
+}
+
+.contenedor_s3-3 {
+  width: 20%;
+}
+
+.contenedor_s3-4 {
+  width: 20%;
+}
+
+.boton-cursos {
+  padding: 8px 15px;
+  border-radius: 5px;
+  font-weight: 400;
+  text-align: end;
+  letter-spacing: 5px;
+  background-color: #003049;
+  color: #fdf3da;
+  border: #fdf3da 5px double;
+
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Contenedor 4 - Pie de pagina */
+
+.pie_pagina {
+  display: flex;
+  justify-content: center;
+  padding: 50px 50px 0 50px;
+  align-items: center;
+  text-align: center;
+}
+
+.div-footer {
+  padding: 0 40px 40px 40px;
+}
+
+.titulo-footer {
+  font-family: "Sacramento", cursive;
+  font-size: 30px;
+  letter-spacing: 5px;
+  color: #003049;
+}
+
+.color-derechos {
+  padding: 10px;
+  background-color: #003049;
+  color: #ffffff;
+}
+
+.div a {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .menu {
+    text-align: center;
+  }
+
+  .texto1 {
+    top: 28%;
+    padding: 0;
+  }
+
+  .boton {
+    top: 55%;
+    padding: 10px 20px;
+  }
+
+  .contenedor {
+    display: block;
+  }
+
+  .img-2 {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .contenedor-text {
+    width: 100%;
+    padding: 1%;
+    text-align: center;
+  }
+
+  .texto-2 {
+    width: 100%;
+    line-height: 25px;
+  }
+
+  .contenedor_s3 {
+    display: inline;
+    padding: 10px;
+    text-align: center;
+  }
+  .contenedor_s3-1 {
+    width: 100%;
+  }
+
+  .texto-3 {
+    width: 100%;
+  }
+
+  .contenedor_s3-2 {
+    width: 100%;
+  }
+
+  .contenedor_s3-2-img {
+    width: 100%;
+    padding-top: 60px;
+  }
+
+  .contenedor_s3-3 {
+    width: 100%;
+  }
+
+  .contenedor_s3-4 {
+    width: 100%;
+  }
+
+  .pie_pagina {
+    display: inline;
+  }
+
+  .color-fondo {
+    background-color: #fdf3da;
+  }
+
+  .img-card-1 {
+    width: 75%;
+  }
+}

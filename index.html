@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/d9411ff381.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Adrian Carrion</title>
+  </head>
+  <body>
+    <header class="img-principal">
+      <nav class="navbar">
+        <ul class="menu">
+          <li class="opcion"><a href="#">Inicio</a></li>
+          <li class="opcion"><a href="#tienda">Cursos</a></li>
+          <li class="opcion"><a href="#quiene_somos">Acerca de</a></li>
+          <li class="opcion"><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <p class="texto1">Academia de Danza clásica</p>
+      <h1 class="titulo1 deletreado">RITMO QUE UNE<br />CORAZONES</h1>
+      <a class="boton link-estilo" href="#">Explorar</a>
+    </header>
+    <div class="separador"></div>
+    <section id="quiene_somos">
+      <div class="contenedor">
+        <div class="img-2">
+          <img src="./img/img-acerca.png" alt="" />
+        </div>
+        <div class="contenedor-text">
+          <h4 class="titulo-texto2">A cerca de nosotros</h4>
+          <h1 class="titulo2">ELEGANCIA Y PASIÓN</h1>
+          <br />
+          <p class="texto-2">
+            Bienvenidos a nuestra academia de ballet, donde la elegancia y la
+            pasión se unen para formar a los bailarines del futuro.
+          </p>
+          <br />
+          <p class="texto-2">
+            Nuestro equipo de profesores altamente calificados guía y nutre el
+            talento de cada alumno, brindando programas personalizados para
+            fomentar la confianza y la expresividad artística. Únete a nosotros
+            y vive una experiencia única en el mundo mágico del ballet.
+          </p>
+          <br /><br />
+          <a class="boton2 link-estilo" href="#">Mas información</a>
+        </div>
+      </div>
+    </section>
+    <section class="color-fondo" id="tienda">
+      <div class="contenedor_s3">
+        <div class="contenedor_s3-1">
+          <h4 class="titulo-texto3">Revisa</h4>
+          <h1 class="titulo2">NUESTROS<br />CURSOS</h1>
+          <br />
+          <p class="texto-3 interlineado">
+            ¡Descubre los cursos de ballet en línea o presencial más populares
+            de nuestra academia! ¡Anímate a probarlos! 🩰
+          </p>
+          <br /><br />
+          <a class="boton2 link-estilo" href="#">Cursos</a>
+        </div>
+        <div class="contenedor_s3-2">
+          <div class="contenedor_s3-2-img">
+            <img class="img-card-1" src="./img/cursos-1.png" alt="" />
+          </div>
+          <div class="contenedor_s3-2-text interletrado">Curso 1</div>
+          <div class="contenedor_s3-2-precio interletrado">$6.99</div>
+          <br />
+          <a class="boton-cursos link-estilo" href="#">Ver</a>
+        </div>
+        <div class="contenedor_s3-3">
+          <div class="contenedor_s3-2-img">
+            <img class="img-card-1" src="./img/cursos-2.png" alt="" />
+          </div>
+          <div class="contenedor_s3-2-text interletrado">Curso 2</div>
+          <div class="contenedor_s3-2-precio interletrado">$8.99</div>
+        </div>
+        <div class="contenedor_s3-4">
+          <div class="contenedor_s3-2-img">
+            <img class="img-card-1" src="./img/cursos-3.png" alt="" />
+          </div>
+          <div class="contenedor_s3-2-text interletrado">Curso 3</div>
+          <div class="contenedor_s3-2-precio interletrado">$9.99</div>
+        </div>
+      </div>
+    </section>
+    <footer class="pie_pagina" id="contacto">
+      <div class="div-footer">
+        <h3 class="titulo-footer">
+          <i class="fa-solid fa-address-book"></i> Dirección
+        </h3>
+        <p>Belisario Quevedo - Latacunga - Ecuador</p>
+      </div>
+      <div class="div-footer">
+        <h3 class="titulo-footer">
+          <i class="fa-solid fa-envelope"></i> Email
+        </h3>
+        <p>aacarrion4@espe.edu.ec</p>
+      </div>
+      <div class="div-footer">
+        <h3 class="titulo-footer">
+          <i class="fa-solid fa-mobile"></i> Telefono
+        </h3>
+        <p>0997384553</p>
+      </div>
+    </footer>
+    <footer>
+      <div class="text-center color-derechos">
+        <p>
+          Todos los derechos reservados por:<a class="color-derechos" href="#"
+            >Adrian Carrion</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      // JavaScript para agregar o eliminar la clase "scrolled" en función del evento de scroll
+
+      window.addEventListener("scroll", function () {
+        const menu = document.querySelector(".menu");
+        const scrollY = window.scrollY;
+
+        if (scrollY > 0) {
+          menu.classList.add("scrolled");
+        } else {
+          menu.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>
